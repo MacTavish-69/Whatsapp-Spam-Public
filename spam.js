@@ -1,16 +1,24 @@
-/* Here is actual script to paste into console */
 // Written By MacTavish. Discord Tag: MacTavish#8517
-// i < NumberOfTimesYouWantToSendMessage
-for (var i = 0; i < 5; i++) {
+
+/* Here is actual script to paste into console */
+
+// for (let loopVariable = 0; loopVariable < NumberOfTimesYouWantToSendMessage; loopVariable++)
+for (let i = 0; i < 5; i++) {
+
+	// Get the Message Box
+	let message_box = document.querySelectorAll("._2S1VP")[1];
 
 	// Set the message
-	document.querySelectorAll("._2S1VP")[1].innerHTML = "Type Whatever you want to send";
+	message_box.innerHTML = "Type Whatever you want to send";
 
 	// Emulate the fucking input event so whatsapp generates the send button
-	var event = document.createEvent('Event');
+	let event = document.createEvent('Event');
 	event.initEvent('input', true, true);
-	document.querySelectorAll("._2S1VP")[1].dispatchEvent(event);
+	message_box.dispatchEvent(event);
 
-	// Finally fuck the send
-	document.querySelector("._35EW6 [data-icon = send]").parentNode.click();
+	// get the Send button
+	let btn_send = document.querySelector("._35EW6");
+
+	// Finally emualte the click and send the message
+	btn_send.click();
 }

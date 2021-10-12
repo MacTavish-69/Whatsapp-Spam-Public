@@ -6,7 +6,7 @@
 for (let i = 0; i < 5; i++) {
 
 	// Get the Message Box
-	let message_box = document.querySelectorAll("._2_1wd")[1];
+	let message_box = document.querySelectorAll("._13NKt")[1];
 
 	// Set the message
 	message_box.innerHTML = "Type Whatever you want to send";
@@ -17,7 +17,7 @@ for (let i = 0; i < 5; i++) {
 	message_box.dispatchEvent(event);
 
 	// get the Send button
-	let btn_send = document.querySelector("._1E0Oz");
+	let btn_send = document.querySelector("._4sWnG");
 
 	// Finally emulate the click and send the message
 	btn_send.click();
